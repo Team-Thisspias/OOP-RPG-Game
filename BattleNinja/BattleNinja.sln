@@ -9,15 +9,21 @@ Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "BattleNinjaContent", "Battl
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EC30231-5327-437E-A611-4E15C2758684}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{7EC30231-5327-437E-A611-4E15C2758684}.Debug|x86.ActiveCfg = Debug|x86
 		{7EC30231-5327-437E-A611-4E15C2758684}.Debug|x86.Build.0 = Debug|x86
+		{7EC30231-5327-437E-A611-4E15C2758684}.Release|Any CPU.ActiveCfg = Release|x86
 		{7EC30231-5327-437E-A611-4E15C2758684}.Release|x86.ActiveCfg = Release|x86
 		{7EC30231-5327-437E-A611-4E15C2758684}.Release|x86.Build.0 = Release|x86
+		{95B37B20-2499-4CB0-ACB1-318BA026EF07}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{95B37B20-2499-4CB0-ACB1-318BA026EF07}.Debug|x86.ActiveCfg = Debug|x86
+		{95B37B20-2499-4CB0-ACB1-318BA026EF07}.Release|Any CPU.ActiveCfg = Release|x86
 		{95B37B20-2499-4CB0-ACB1-318BA026EF07}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
