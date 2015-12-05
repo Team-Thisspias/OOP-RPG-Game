@@ -8,15 +8,15 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinjaContent\</RootDirectory>
-      <LoggerRootDirectory>E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\</LoggerRootDirectory>
-      <IntermediateDirectory>E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinjaContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-12-05T13:12:43.859335+02:00</Value>
+        <Value>2015-12-05T14:03:16.6986142+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

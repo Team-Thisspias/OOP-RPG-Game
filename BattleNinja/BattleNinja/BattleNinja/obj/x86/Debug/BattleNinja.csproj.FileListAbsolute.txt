@@ -4,3 +4,9 @@ E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\BattleNinja.cs
 E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\BattleNinja.exe
 E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\BattleNinja.pdb
+C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\BattleNinja.exe
+C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\BattleNinja.pdb
+C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\BattleNinja.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\BattleNinja.exe
+C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\BattleNinja.pdb
