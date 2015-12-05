@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animations\Animation.cs" />
+    <Compile Include="Animations\AnimationPlayer.cs" />
     <Compile Include="Characters\Enemy.cs" />
     <Compile Include="Characters\Player.cs" />
     <Compile Include="Circle.cs" />
