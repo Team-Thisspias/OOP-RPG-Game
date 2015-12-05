@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace BattleNinja.Characters
+﻿namespace BattleNinja.Characters
 {
-    class Enemy
+    using Microsoft.Xna.Framework;
+using System;
+
+    public class Enemy
     {
+        
     }
 }

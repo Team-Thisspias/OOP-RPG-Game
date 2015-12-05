@@ -72,9 +72,12 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animations\Animation.cs" />
+    <Compile Include="Characters\Enemy.cs" />
     <Compile Include="Characters\Player.cs" />
     <Compile Include="Circle.cs" />
     <Compile Include="Common\GlobalConstants.cs" />
+    <Compile Include="Enums\FaceDirection.cs" />
     <Compile Include="Enums\TileCollision.cs" />
     <Compile Include="Interfaces\ITest.cs" />
     <Compile Include="Items\Gem.cs" />
