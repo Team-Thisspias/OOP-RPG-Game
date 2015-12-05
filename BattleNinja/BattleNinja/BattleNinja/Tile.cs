@@ -1,11 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace BattleNinja
+﻿namespace BattleNinja
 {
-    class Tile
+    using System;
+    
+    using Microsoft.Xna.Framework.Graphics;
+    
+    using BattleNinja.Enums;
+
+    public struct Tile
     {
+        public Texture2D Texture;
+        public TileCollision Collision;
+
     }
 }
