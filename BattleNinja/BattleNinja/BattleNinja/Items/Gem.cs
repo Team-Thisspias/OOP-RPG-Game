@@ -5,6 +5,7 @@
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
     using Microsoft.Xna.Framework.Audio;
+
     using BattleNinja.Common;
 
     public class Gem
@@ -20,9 +21,9 @@
         private Vector2 basePosition;
         private float bounce; // the icon will bounce
 
-        public Gem(Level leve, Vector2 position)
+        public Gem(Level level, Vector2 position)
         {
-            this.Level = leve;
+            this.Level = level;
             this.basePosition = position;
 
             LoadContent();
@@ -33,6 +34,10 @@
             get
             {
                 return level;
+            }
+            set
+            {
+                this.level = value;
             }
         }
 

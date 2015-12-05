@@ -78,6 +78,7 @@
     <Compile Include="Enums\TileCollision.cs" />
     <Compile Include="Interfaces\ITest.cs" />
     <Compile Include="Items\Gem.cs" />
+    <Compile Include="Layer.cs" />
     <Compile Include="Level.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MainRunner.cs" />
