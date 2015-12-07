@@ -236,6 +236,11 @@ using Microsoft.Xna.Framework.Input;
             return new Rectangle(x * GlobalConstants.TileWidth, y * GlobalConstants.TileHeight, GlobalConstants.TileWidth, GlobalConstants.TileHeight);
         }
 
+        public void StartNewLife()
+        {
+            this.Player.Reset(this.start);
+        }
+
         // Unloads the level content.
         public void Dispose()
         {
