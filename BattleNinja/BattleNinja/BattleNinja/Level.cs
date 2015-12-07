@@ -12,6 +12,7 @@
     using Microsoft.Xna.Framework.Audio;
     using Microsoft.Xna.Framework.Content;
     using Microsoft.Xna.Framework.Graphics;
+    using BattleNinja.Enums;
 
     public class Level
     {
@@ -182,7 +183,39 @@
 
         private Tile LoadTiles(char tileType, int x, int y)
         {
-            throw new NotImplementedException();
+            switch (tileType)
+            {
+                // Blank space
+                case '.':
+                    return new Tile(null, TileCollision.Passable);
+                // Exit
+                case 'X':
+                    return this.LoadExitTile(x, y);
+                default:
+                    throw new NotSupportedException(string.Format("Unsupported tile type character '{0}' at position {1}, {2}.", tileType, x, y));
+            }
+        }
+
+        private Tile LoadExitTile(int x, int y)
+        {
+            if (this.exit != InvalidPosition)
+            {
+                throw new NotSupportedException("A level may only have one exit.");
+            }
+
+            this.exit = this.GetBounds(x, y).Center;
+
+            return this.LoadTile("Exit", TileCollision.Passable);
+        }
+
+        private Tile LoadTile(string name, TileCollision tileCollision)
+        {
+            return new Tile(this.Content.Load<Texture2D>("Tiles/" + name), tileCollision);
+        }
+
+        private Rectangle GetBounds(int x, int y)
+        {
+            return new Rectangle(x * GlobalConstants.TileWidth, y * GlobalConstants.TileHeight, GlobalConstants.TileWidth, GlobalConstants.TileHeight);
         }
 
         /// Draw everything in the level from background to foreground.
