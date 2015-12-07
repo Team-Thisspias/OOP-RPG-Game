@@ -14,7 +14,7 @@
     using Microsoft.Xna.Framework.Content;
     using Microsoft.Xna.Framework.Graphics;
 
-    public class Level
+    public class Level : IDisposable
     {
         // Physical structure of the level.
         private Tile[,] tiles;
@@ -136,6 +136,100 @@
             }
         }
 
+        // Draw everything in the level from background to foreground.
+        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
+        {
+            spriteBatch.Begin();
+            for (int i = 0; i <= GlobalConstants.EntityLayer; ++i)
+                layers[i].Draw(spriteBatch, cameraPosition);
+            spriteBatch.End();
+
+            ScrollCamera(spriteBatch.GraphicsDevice.Viewport);
+            Matrix cameraTransform = Matrix.CreateTranslation(-cameraPosition, 0.0f, 0.0f);
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
+                              RasterizerState.CullCounterClockwise, null, cameraTransform);
+
+            DrawTiles(spriteBatch);
+
+            //TODO gem,player,enemies
+
+            spriteBatch.End();
+
+            spriteBatch.Begin();
+            for (int i = GlobalConstants.EntityLayer + 1; i < layers.Length; ++i)
+                layers[i].Draw(spriteBatch, cameraPosition);
+            spriteBatch.End();
+
+        }
+
+        //Gets the collision made of the tile at a particular location.
+        //This method handles tiles outside of the levels boundries by making it 
+        //impossible to escape past the left or right edges, but allowing things
+        //to jump beyond the top of the level and fall off the bottom.
+        public TileCollision GetCollision(int x, int y)
+        {
+            //Prevent escaping past the level ends.
+            if (x < 0 || x >= this.Width)
+            {
+                return TileCollision.Impassable;
+            }
+
+            //Allow jumping past the level top and falling through the bottom.
+            if (y < 0 || y >= this.Height)
+            {
+                return TileCollision.Passable;
+            }
+
+            return this.tiles[x, y].Collision;
+        }
+
+        // Unloads the level content.
+        public void Dispose()
+        {
+            this.Content.Unload();
+        }
+
+        // this moves the world backwards, and keeps the camera inthe same position
+        private void ScrollCamera(Viewport viewport)
+        {
+            // Calculate the edges of the screen.
+            float marginWidth = viewport.Width * GlobalConstants.ViewMargin;
+            float marginLeft = cameraPosition + marginWidth;
+            float marginRight = cameraPosition + viewport.Width - marginWidth;
+
+            // Calculate how far to scroll when the player is near the edges of the screen.
+            //TODO
+            float cameraMovement = 0.0f;
+            
+            // Update the camera position, but prevent scrolling off the ends of the level.
+            float maxCameraPosition = GlobalConstants.TileWidth * Width - viewport.Width;
+            cameraPosition = MathHelper.Clamp(cameraPosition + cameraMovement, 0.0f, maxCameraPosition);
+        }
+
+        /// Draws each tile in the level.
+        private void DrawTiles(SpriteBatch spriteBatch)
+        {
+            // Calculate the visible range of tiles.
+            int left = (int)Math.Floor(cameraPosition / GlobalConstants.TileWidth);
+            int right = left + spriteBatch.GraphicsDevice.Viewport.Width / GlobalConstants.TileWidth;
+            right = Math.Min(right, Width - 1);
+            // For each tile position
+
+            for (int y = 0; y < Height; ++y)
+            {
+                for (int x = left; x <= right; ++x)
+                {
+                    // If there is a visible tile in that position
+                    Texture2D texture = tiles[x, y].Texture;
+                    if (texture != null)
+                    {
+                        // Draw it in screen space.
+                        Vector2 position = new Vector2(x, y) * Tile.Size;
+                        spriteBatch.Draw(texture, position, Color.White);
+                    }
+                }
+            }
+        }
         private void LoadTiles(Stream fileStream)
         {
             int width;
@@ -197,7 +291,7 @@
                 // Floating platform
                 case '-':
                     return this.LoadTile("Platform", TileCollision.Platform);
-                
+
                 // Various enemis
                 case 'A':
                     return this.LoadEnemyTile(x, y, "MonsterA");
@@ -214,7 +308,7 @@
                 //Passable block
                 case ':':
                     return this.LoadVarietyTile("BlockB", 2, TileCollision.Passable);
-                
+
                 //Player 1 start point
                 case '1':
                     return this.LoadStartTile(x, y);
@@ -254,7 +348,7 @@
         {
             Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
             this.enemies.Add(new Enemy(this, position, spriteSet));
-            
+
             return new Tile(null, TileCollision.Passable);
         }
 
@@ -288,76 +382,5 @@
         {
             return new Rectangle(x * GlobalConstants.TileWidth, y * GlobalConstants.TileHeight, GlobalConstants.TileWidth, GlobalConstants.TileHeight);
         }
-
-        /// Draw everything in the level from background to foreground.
-        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
-        {
-            spriteBatch.Begin();
-            for (int i = 0; i <= GlobalConstants.EntityLayer; ++i)
-                layers[i].Draw(spriteBatch, cameraPosition);
-            spriteBatch.End();
-
-            ScrollCamera(spriteBatch.GraphicsDevice.Viewport);
-            Matrix cameraTransform = Matrix.CreateTranslation(-cameraPosition, 0.0f, 0.0f);
-            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
-                              RasterizerState.CullCounterClockwise, null, cameraTransform);
-
-            DrawTiles(spriteBatch);
-
-            //TODO gem,player,enemies
-
-            spriteBatch.End();
-
-            spriteBatch.Begin();
-            for (int i = GlobalConstants.EntityLayer + 1; i < layers.Length; ++i)
-                layers[i].Draw(spriteBatch, cameraPosition);
-            spriteBatch.End();
-
-        }
-
-        // this moves the world backwards, and keeps the camera inthe same position
-
-
-        private void ScrollCamera(Viewport viewport)
-        {
-            // Calculate the edges of the screen.
-            float marginWidth = viewport.Width * GlobalConstants.ViewMargin;
-            float marginLeft = cameraPosition + marginWidth;
-            float marginRight = cameraPosition + viewport.Width - marginWidth;
-
-            // Calculate how far to scroll when the player is near the edges of the screen.
-            //TODO
-            float cameraMovement = 0.0f;
-            
-            // Update the camera position, but prevent scrolling off the ends of the level.
-            float maxCameraPosition = GlobalConstants.TileWidth * Width - viewport.Width;
-            cameraPosition = MathHelper.Clamp(cameraPosition + cameraMovement, 0.0f, maxCameraPosition);
-        }
-
-        /// Draws each tile in the level.
-        private void DrawTiles(SpriteBatch spriteBatch)
-        {
-            // Calculate the visible range of tiles.
-            int left = (int)Math.Floor(cameraPosition / GlobalConstants.TileWidth);
-            int right = left + spriteBatch.GraphicsDevice.Viewport.Width / GlobalConstants.TileWidth;
-            right = Math.Min(right, Width - 1);
-            // For each tile position
-
-            for (int y = 0; y < Height; ++y)
-            {
-                for (int x = left; x <= right; ++x)
-                {
-                    // If there is a visible tile in that position
-                    Texture2D texture = tiles[x, y].Texture;
-                    if (texture != null)
-                    {
-                        // Draw it in screen space.
-                        Vector2 position = new Vector2(x, y) * Tile.Size;
-                        spriteBatch.Draw(texture, position, Color.White);
-                    }
-                }
-            }
-        }
-
     }
 }
