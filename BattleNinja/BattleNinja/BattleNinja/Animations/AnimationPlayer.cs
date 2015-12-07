@@ -87,7 +87,11 @@
             }
 
             //Calculate the source rectangle of the current frame.
-            Rectangle source = new Rectangle(this.FrameIndex * this.Animation.Texture.Height, 0, this.Animation.Texture.Height, this.Animation.Texture.Height);
+            Rectangle source = new Rectangle(
+                this.FrameIndex * this.Animation.Texture.Height, 
+                0, 
+                this.Animation.Texture.Height, 
+                this.Animation.Texture.Height);
 
             //Draw the current frame.
             spriteBatch.Draw(this.Animation.Texture, position, source, Color.White, 0.0f, this.Origin, 1.0f, spriteEffects, 0.0f);
