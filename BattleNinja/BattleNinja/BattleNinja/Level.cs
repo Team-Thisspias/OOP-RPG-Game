@@ -191,9 +191,20 @@
                 // Exit
                 case 'X':
                     return this.LoadExitTile(x, y);
+                // Gem
+                case 'G':
+                    return this.LoadGemTile(x, y);
                 default:
                     throw new NotSupportedException(string.Format("Unsupported tile type character '{0}' at position {1}, {2}.", tileType, x, y));
             }
+        }
+
+        private Tile LoadGemTile(int x, int y)
+        {
+            Point position = GetBounds(x, y).Center;
+            this.gems.Add(new Gem(this, new Vector2(position.X, position.Y)));
+
+            return new Tile(null, TileCollision.Passable);
         }
 
         private Tile LoadExitTile(int x, int y)
@@ -208,6 +219,7 @@
             return this.LoadTile("Exit", TileCollision.Passable);
         }
 
+        //Loads a tile with a random appearance.
         private Tile LoadTile(string name, TileCollision tileCollision)
         {
             return new Tile(this.Content.Load<Texture2D>("Tiles/" + name), tileCollision);
