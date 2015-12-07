@@ -137,31 +137,6 @@ using Microsoft.Xna.Framework.Input;
             }
         }
 
-        // Draw everything in the level from background to foreground.
-        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
-        {
-            spriteBatch.Begin();
-            for (int i = 0; i <= GlobalConstants.EntityLayer; ++i)
-                layers[i].Draw(spriteBatch, cameraPosition);
-            spriteBatch.End();
-
-            ScrollCamera(spriteBatch.GraphicsDevice.Viewport);
-            Matrix cameraTransform = Matrix.CreateTranslation(-cameraPosition, 0.0f, 0.0f);
-            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
-                              RasterizerState.CullCounterClockwise, null, cameraTransform);
-
-            DrawTiles(spriteBatch);
-
-            //TODO gem,player,enemies
-
-            spriteBatch.End();
-
-            spriteBatch.Begin();
-            for (int i = GlobalConstants.EntityLayer + 1; i < layers.Length; ++i)
-                layers[i].Draw(spriteBatch, cameraPosition);
-            spriteBatch.End();
-
-        }
 
         //Gets the collision made of the tile at a particular location.
         //This method handles tiles outside of the levels boundries by making it 
@@ -239,6 +214,32 @@ using Microsoft.Xna.Framework.Input;
         public void StartNewLife()
         {
             this.Player.Reset(this.start);
+        }
+
+        // Draw everything in the level from background to foreground.
+        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
+        {
+            spriteBatch.Begin();
+            for (int i = 0; i <= GlobalConstants.EntityLayer; ++i)
+                layers[i].Draw(spriteBatch, cameraPosition);
+            spriteBatch.End();
+
+            ScrollCamera(spriteBatch.GraphicsDevice.Viewport);
+            Matrix cameraTransform = Matrix.CreateTranslation(-cameraPosition, 0.0f, 0.0f);
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
+                              RasterizerState.CullCounterClockwise, null, cameraTransform);
+
+            DrawTiles(spriteBatch);
+
+            //TODO gem,player,enemies
+
+            spriteBatch.End();
+
+            spriteBatch.Begin();
+            for (int i = GlobalConstants.EntityLayer + 1; i < layers.Length; ++i)
+                layers[i].Draw(spriteBatch, cameraPosition);
+            spriteBatch.End();
+
         }
 
         // Unloads the level content.
