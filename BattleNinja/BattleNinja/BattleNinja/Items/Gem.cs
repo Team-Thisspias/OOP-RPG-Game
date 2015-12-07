@@ -7,6 +7,7 @@
     using Microsoft.Xna.Framework.Audio;
 
     using BattleNinja.Common;
+    using BattleNinja.Characters;
 
     public class Gem
     {
@@ -26,7 +27,7 @@
             this.Level = level;
             this.basePosition = position;
 
-            LoadContent();
+            this.LoadContent();
         }
 
         public Level Level 
@@ -60,9 +61,11 @@
         }
 
 
-        private void LoadContent()
+        public void LoadContent()
         {
-            throw new NotImplementedException();
+            texture = Level.Content.Load<Texture2D>("Sprites/steam"); //content for the gem
+            origin = new Vector2(texture.Width / 2.0f, texture.Height / 2.0f);
+            collectedSound = this.Level.Content.Load<SoundEffect>("Sounds/Photo shot"); //change of sound effects
         }
 
         /// <summary>
@@ -74,6 +77,16 @@
             // Include the X coordinate so that neighboring gems bounce in a nice wave pattern.            
             double t = gameTime.TotalGameTime.TotalSeconds * GlobalConstants.GemBounceRate + Position.X * GlobalConstants.GemBounceSync;
             bounce = (float)Math.Sin(t) * GlobalConstants.GemBounceHeight * texture.Height;
+        }
+
+        public void OnCollected(Player collectedBy)
+        {
+            collectedSound.Play();
+        }
+
+        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
+        {
+            spriteBatch.Draw(texture, Position, null, Color, 0.0f, origin, 1.0f, SpriteEffects.None, 0.0f);
         }
     }
 }

@@ -211,7 +211,7 @@ using Microsoft.Xna.Framework.Input;
             {
                 timeRemaining -= gameTime.ElapsedGameTime;
                 this.Player.Update(gameTime, keyboardState, gamePadState, accelState, orientation);
-                this.UpdateGames(gameTime);
+                this.UpdateGems(gameTime);
 
                 //Falling off the bottom of the level kills the player.
                 if (this.Player.BoundingRectangle.Top >= this.Height * GlobalConstants.TileHeight)
@@ -219,7 +219,7 @@ using Microsoft.Xna.Framework.Input;
                     this.OnPlayerKilled(null);
                 }
 
-                this.UpdateGames(gameTime);
+                this.UpdateGems(gameTime);
 
                 //The player has reached the exit if they are standing on the ground and
                 //his bounding rectangle contains the center of the exit tile. They can only
@@ -242,13 +242,46 @@ using Microsoft.Xna.Framework.Input;
             this.Content.Unload();
         }
 
-        private void UpdateGames(GameTime gameTime)
+        private void UpdateGems(GameTime gameTime)
         {
             for (int i = 0; i < this.gems.Count; i++)
             {
                 Gem gem = this.gems[i];
                 gem.Update(gameTime);
             }
+        }
+
+        private void updateEnemies(GameTime gameTime)
+        {
+            foreach (Enemy enemy in this.enemies)
+            {
+                enemy.Update(gameTime);
+
+                //Touching an enemy instantly kills the player
+                if (enemy.BoundingRectangle.Intersects(this.Player.BoundingRectangle))
+                {
+                    if (enemy.isAlive)
+                    {
+                        this.OnPlayerKilled(enemy); //if the enemy is alive then he is not instantly killed
+                    }
+
+                    if (enemy.isAlive && enemy.BoundingRectangle.Intersects(this.Player.MeleeRectangle))
+                    {
+                        if (this.Player.isAttacking)
+                        {
+                            this.OnEnemyKilled(enemy, this.Player); // if the player is prunching, and his rectangle
+                                                                    // interacts with the enemy's then the enemy will die
+                        }
+                    }
+                }
+            }
+        }
+
+        private void OnGemCollected(Gem gem, Player collectedBy)
+        {
+            this.score += GlobalConstants.GemPointValue;
+
+            gem.OnCollected(collectedBy);
         }
 
         private void OnEnemyKilled(Enemy enemy, Player killedBy)
