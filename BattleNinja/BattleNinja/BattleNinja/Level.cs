@@ -158,7 +158,7 @@ using Microsoft.Xna.Framework.Input;
             Player.Draw(gameTime, spriteBatch);
 
             foreach (Enemy enemy in enemies)
-                if (enemy.IsAlive || enemy.deathTime > 0)
+                if (enemy.isAlive || enemy.deathTime > 0)
                     enemy.Draw(gameTime, spriteBatch);
 
             spriteBatch.End();
