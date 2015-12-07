@@ -10,3 +10,80 @@ C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\D
 C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\BattleNinja.exe
 C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\BattleNinja.pdb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer0_0.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer0_1.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer0_2.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer1_0.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer1_1.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer1_2.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer2_0.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer2_1.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer2_2.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Die monster A.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Die.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Gem.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Idle monster A.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Die monster A.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Die.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Idle monster A.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Idle.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Run monster A.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Run.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Die monster A.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Die.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Idle monster A.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Idle.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Run monster A.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Run.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Die monster A.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Die.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Idle monster A.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Idle.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Run monster A.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Run.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Die monster A.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Die.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Idle monster A.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Idle.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Run monster A.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Run.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\attack2.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\damage.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\damage2.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\Idle.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\Idle2.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\jump.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\jump2.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\walk.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\walk2.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Die monster A.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Die.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Idle.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Jump.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Run.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Run monster A.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\steam.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\ExitReached.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\GemCollected.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\MonsterKilled.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Music.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\PlayerFall.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\PlayerJump.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\PlayerKilled.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Powerup.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Grunt.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Horse grunt 1.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Horse grunt 3.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Photon shot.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Space laser sounds 2.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\war plains.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\ExitReached.wma
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\GemCollected.wma
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\MonsterKilled.wma
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Music.wma
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\PlayerFall.wma
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\PlayerJump.wma
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\PlayerKilled.wma
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Powerup.wma
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\war plains.wma

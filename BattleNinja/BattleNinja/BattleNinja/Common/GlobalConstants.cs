@@ -8,6 +8,10 @@ namespace BattleNinja.Common
         public const int TileHeight = 32;
 
         public const int GemPointValue = 50; //Points given to the player for collecting a icon
+        // Bounce control constants
+        public const float GemBounceHeight = 0.18f; // how high it bounces
+        public const float GemBounceRate = 3.0f; // how often it bounces
+        public const float GemBounceSync = -0.75f; // in sync with other icons
 
         public const float deathTimeMax = 1.0f;
 
@@ -17,6 +21,8 @@ namespace BattleNinja.Common
         public const float EnemyMoveSpeed = 64.0f;
 
         public const float ViewMargin = 0.35f;
+
+        public const int LevelPointsPerSecond = 5;
 
         public const int EntityLayer = 2; // The layer which entities are drawn on top of.
 

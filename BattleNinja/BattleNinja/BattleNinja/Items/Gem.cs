@@ -65,5 +65,15 @@
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Bounces up and down in the air to entice players to collect them.
+        /// </summary>
+        public void Update(GameTime gameTime)
+        {
+            // Bounce along a sine curve over time.
+            // Include the X coordinate so that neighboring gems bounce in a nice wave pattern.            
+            double t = gameTime.TotalGameTime.TotalSeconds * GlobalConstants.GemBounceRate + Position.X * GlobalConstants.GemBounceSync;
+            bounce = (float)Math.Sin(t) * GlobalConstants.GemBounceHeight * texture.Height;
+        }
     }
 }

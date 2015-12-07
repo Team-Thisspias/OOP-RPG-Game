@@ -188,12 +188,47 @@ using Microsoft.Xna.Framework.Input;
         //and handles the time limit with scoring.
         public void Update(
             GameTime gameTime,
-            KeyboardState kayboardState,
+            KeyboardState keyboardState,
             GamePadState gamePadState,
+            AccelerometerState accelState,
             DisplayOrientation orientation
             )
         {
+            if (!this.Player.IsAlive || this.TimeRemaining == TimeSpan.Zero)
+            {
+                //Still want to perform physics on the player.
+                this.Player.ApplyPhysics(gameTime);
+            }
+            else if(ReachedExit)
+            {
+                //Animate the time being converted into points.
+                int seconds = (int)Math.Round(gameTime.ElapsedGameTime.TotalSeconds * 100.0f);
+                seconds = Math.Min(seconds, (int)Math.Ceiling(this.TimeRemaining.TotalSeconds));
+                timeRemaining -= TimeSpan.FromSeconds(seconds);
+                score += seconds + GlobalConstants.LevelPointsPerSecond;
+            }
+            else
+            {
+                timeRemaining -= gameTime.ElapsedGameTime;
+                this.Player.Update(gameTime, keyboardState, gamePadState, accelState, orientation);
+                this.UpdateGames(gameTime);
 
+                //Falling off the bottom of the level kills the player.
+                if (this.Player.BoundingRectangle.Top >= this.Height * GlobalConstants.TileHeight)
+                {
+                    this.OnPlayerKilled(null);
+                }
+
+                this.UpdateGames(gameTime);
+
+                //The player has reached the exit if they are standing on the ground and
+                //his bounding rectangle contains the center of the exit tile. They can only
+                //exit when they have collected all of the gems.
+                if (this.Player.IsAlive && this.Player.IsOnGround && this.Player.BoundingRectangle.Contains(exit))
+                {
+                    this.OnExitReached();
+                }
+            }
         }
 
         public Rectangle GetBounds(int x, int y)
@@ -205,6 +240,32 @@ using Microsoft.Xna.Framework.Input;
         public void Dispose()
         {
             this.Content.Unload();
+        }
+
+        private void UpdateGames(GameTime gameTime)
+        {
+            for (int i = 0; i < this.gems.Count; i++)
+            {
+                Gem gem = this.gems[i];
+                gem.Update(gameTime);
+            }
+        }
+
+        private void OnEnemyKilled(Enemy enemy, Player killedBy)
+        {
+            enemy.OnKilled(killedBy);
+        }
+
+        private void OnPlayerKilled(Enemy killedBy)
+        {
+            this.Player.OnKilled(killedBy); //enemy will die
+        }
+
+        private void OnExitReached()
+        {
+            this.Player.OnReachedExit();
+            this.exitReachedSound.Play();
+            this.reachedExit = true;
         }
 
         // this moves the world backwards, and keeps the camera inthe same position
