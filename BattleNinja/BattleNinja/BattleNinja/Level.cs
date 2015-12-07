@@ -7,12 +7,14 @@
     using BattleNinja.Characters;
     using BattleNinja.Common;
     using BattleNinja.Items;
+    using BattleNinja.Enums;
     
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Audio;
     using Microsoft.Xna.Framework.Content;
     using Microsoft.Xna.Framework.Graphics;
-    using BattleNinja.Enums;
+    //using Microsoft.Xna.Framework.Input.Touch;
+    //using Microsoft.Xna.Framework.Input;
 
     public class Level
     {
@@ -194,9 +196,22 @@
                 // Gem
                 case 'G':
                     return this.LoadGemTile(x, y);
+                // Floating platform
+                case '-':
+                    return this.LoadTile("Platform", TileCollision.Platform);
+                
+                // Various enemis
+                case 'A':
+                    return this.LoadEnemyTile(x, y, "MonsterA");
                 default:
                     throw new NotSupportedException(string.Format("Unsupported tile type character '{0}' at position {1}, {2}.", tileType, x, y));
             }
+        }
+
+        private Tile LoadEnemyTile(int x, int y, string spariteSet)
+        {
+            return new Tile();
+            //Vector2 position = RectangleExtensions
         }
 
         private Tile LoadGemTile(int x, int y)
