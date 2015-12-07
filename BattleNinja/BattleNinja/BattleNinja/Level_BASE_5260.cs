@@ -152,14 +152,7 @@ using Microsoft.Xna.Framework.Input;
 
             DrawTiles(spriteBatch);
 
-            foreach (Gem gem in gems)
-                gem.Draw(gameTime, spriteBatch);
-
-            Player.Draw(gameTime, spriteBatch);
-
-            foreach (Enemy enemy in enemies)
-                if (enemy.IsAlive || enemy.deathTime > 0)
-                    enemy.Draw(gameTime, spriteBatch);
+            //TODO gem,player,enemies
 
             spriteBatch.End();
 
@@ -322,16 +315,9 @@ using Microsoft.Xna.Framework.Input;
             float marginRight = cameraPosition + viewport.Width - marginWidth;
 
             // Calculate how far to scroll when the player is near the edges of the screen.
+            //TODO
             float cameraMovement = 0.0f;
-            if (Player.Position.X < marginLeft)
-            {
-                cameraMovement = Player.Position.X - marginLeft;
-            }
-            else if (Player.Position.X > marginRight)
-            {
-                cameraMovement = Player.Position.X - marginRight;
-            }
-                        
+            
             // Update the camera position, but prevent scrolling off the ends of the level.
             float maxCameraPosition = GlobalConstants.TileWidth * Width - viewport.Width;
             cameraPosition = MathHelper.Clamp(cameraPosition + cameraMovement, 0.0f, maxCameraPosition);

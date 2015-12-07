@@ -137,38 +137,6 @@ using Microsoft.Xna.Framework.Input;
             }
         }
 
-        // Draw everything in the level from background to foreground.
-        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
-        {
-            spriteBatch.Begin();
-            for (int i = 0; i <= GlobalConstants.EntityLayer; ++i)
-                layers[i].Draw(spriteBatch, cameraPosition);
-            spriteBatch.End();
-
-            ScrollCamera(spriteBatch.GraphicsDevice.Viewport);
-            Matrix cameraTransform = Matrix.CreateTranslation(-cameraPosition, 0.0f, 0.0f);
-            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
-                              RasterizerState.CullCounterClockwise, null, cameraTransform);
-
-            DrawTiles(spriteBatch);
-
-            foreach (Gem gem in gems)
-                gem.Draw(gameTime, spriteBatch);
-
-            Player.Draw(gameTime, spriteBatch);
-
-            foreach (Enemy enemy in enemies)
-                if (enemy.IsAlive || enemy.deathTime > 0)
-                    enemy.Draw(gameTime, spriteBatch);
-
-            spriteBatch.End();
-
-            spriteBatch.Begin();
-            for (int i = GlobalConstants.EntityLayer + 1; i < layers.Length; ++i)
-                layers[i].Draw(spriteBatch, cameraPosition);
-            spriteBatch.End();
-
-        }
 
         //Gets the collision made of the tile at a particular location.
         //This method handles tiles outside of the levels boundries by making it 
@@ -248,6 +216,32 @@ using Microsoft.Xna.Framework.Input;
             this.Player.Reset(this.start);
         }
 
+        // Draw everything in the level from background to foreground.
+        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
+        {
+            spriteBatch.Begin();
+            for (int i = 0; i <= GlobalConstants.EntityLayer; ++i)
+                layers[i].Draw(spriteBatch, cameraPosition);
+            spriteBatch.End();
+
+            ScrollCamera(spriteBatch.GraphicsDevice.Viewport);
+            Matrix cameraTransform = Matrix.CreateTranslation(-cameraPosition, 0.0f, 0.0f);
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
+                              RasterizerState.CullCounterClockwise, null, cameraTransform);
+
+            DrawTiles(spriteBatch);
+
+            //TODO gem,player,enemies
+
+            spriteBatch.End();
+
+            spriteBatch.Begin();
+            for (int i = GlobalConstants.EntityLayer + 1; i < layers.Length; ++i)
+                layers[i].Draw(spriteBatch, cameraPosition);
+            spriteBatch.End();
+
+        }
+
         // Unloads the level content.
         public void Dispose()
         {
@@ -322,16 +316,9 @@ using Microsoft.Xna.Framework.Input;
             float marginRight = cameraPosition + viewport.Width - marginWidth;
 
             // Calculate how far to scroll when the player is near the edges of the screen.
+            //TODO
             float cameraMovement = 0.0f;
-            if (Player.Position.X < marginLeft)
-            {
-                cameraMovement = Player.Position.X - marginLeft;
-            }
-            else if (Player.Position.X > marginRight)
-            {
-                cameraMovement = Player.Position.X - marginRight;
-            }
-                        
+            
             // Update the camera position, but prevent scrolling off the ends of the level.
             float maxCameraPosition = GlobalConstants.TileWidth * Width - viewport.Width;
             cameraPosition = MathHelper.Clamp(cameraPosition + cameraMovement, 0.0f, maxCameraPosition);
