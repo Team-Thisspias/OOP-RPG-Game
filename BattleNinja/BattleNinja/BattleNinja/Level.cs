@@ -208,14 +208,35 @@
                 case 'D':
                     return this.LoadEnemyTile(x, y, "MonsterD");
 
-                    //Platform block
+                //Platform block
                 case '~':
                     return this.LoadVarietyTile("BlockB", 2, TileCollision.Platform);
+                //Passable block
+                case ':':
+                    return this.LoadVarietyTile("BlockB", 2, TileCollision.Passable);
+                
+                //Player 1 start point
+                case '#':
+                    return this.LoadStartTile(x, y);
                 default:
                     throw new NotSupportedException(string.Format("Unsupported tile type character '{0}' at position {1}, {2}.", tileType, x, y));
             }
         }
 
+        private Tile LoadStartTile(int x, int y)
+        {
+            if (this.Player != null)
+            {
+                throw new NotSupportedException("level may only have one starting point.");
+            }
+
+            this.start = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
+            this.Player = new Player(this, start);
+
+            return new Tile(null, TileCollision.Passable);
+        }
+
+        //Loads a tile with a random appearance.
         private Tile LoadVarietyTile(string baseName, int variationCount, TileCollision tileCollision)
         {
             int index = random.Next(variationCount);
