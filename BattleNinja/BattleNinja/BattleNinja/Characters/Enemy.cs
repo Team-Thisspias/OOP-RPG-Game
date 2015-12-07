@@ -4,11 +4,11 @@
 
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Audio;
+    using Microsoft.Xna.Framework.Graphics;
 
     using BattleNinja.Animations;
     using BattleNinja.Common;
     using BattleNinja.Enums;
-using Microsoft.Xna.Framework.Graphics;
 
     public class Enemy
     {
@@ -77,10 +77,13 @@ using Microsoft.Xna.Framework.Graphics;
         public void LoadContent(string spriteSet)
         {
             //Load animations.
-            //TO DO...
-
+            spriteSet = "Sprites/" + spriteSet + "/";
+            this.runAnimation = new Animation(this.Level.Content.Load<Texture2D>(spriteSet + "Run monster A"), 0.1f, true);
+            this.idleAnimation = new Animation(this.Level.Content.Load<Texture2D>(spriteSet + "Idle monster A"), 0.15f, true);
+            this.dieAnimation = new Animation(this.Level.Content.Load<Texture2D>(spriteSet + "Die monster A"), 0.07f, false);
+            
             //Load sounds.
-            //TO DO...
+            this.killedSound = this.Level.Content.Load<SoundEffect>("Sounds/Hourse frunt 1");
 
             //Calculate bounds within texture size.
             int width = (int)(this.idleAnimation.FrameWidth * 0.35);
@@ -112,15 +115,17 @@ using Microsoft.Xna.Framework.Graphics;
             else
             {
                 //If we are about to run into a wall or off a cliff  start waiting.
-                //if(//To DO)
-                //{
-                //   //TO Do...
-                //}
-                //else
-                //{
-                //    //Move in the current direction.
-                //    //To DO...
-                //}
+                if (this.Level.GetCollision(tileX + (int)this.direction, tileY - 1) == TileCollision.Impassable ||
+                    this.Level.GetCollision(tileX (int)this.direction, tileY) == TileCollision.Passable)
+                {
+                    this.waitTime = GlobalConstants.EnemyMaxWaitTime;
+                }
+                else
+                {
+                    //Move in the current directin.
+                    Vector2 velocity = new Vector2((int)this.direction * GlobalConstants.EnemyMoveSpeed * elapsed, 0.0f);
+                    this.position = this.position + velocity;
+                }
                 if (!this.isAlive)
                 {
                     this.deathTime -= (float)gameTime.ElapsedGameTime.TotalSeconds;
