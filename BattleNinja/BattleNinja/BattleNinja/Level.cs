@@ -166,7 +166,7 @@
                 {
                     //to load each tile.
                     char tileType = lines[y][x];
-                    tiles[x, y] = this.LoadTiles(tileType, x, y);
+                    tiles[x, y] = this.LoadTile(tileType, x, y);
                 }
             }
 
@@ -181,7 +181,7 @@
             }
         }
 
-        private Tile LoadTiles(char tileType, int x, int y)
+        private Tile LoadTile(char tileType, int x, int y)
         {
             switch (tileType)
             {
@@ -216,8 +216,13 @@
                     return this.LoadVarietyTile("BlockB", 2, TileCollision.Passable);
                 
                 //Player 1 start point
-                case '#':
+                case '1':
                     return this.LoadStartTile(x, y);
+
+                //Impassable block
+                case '#':
+                    return LoadVarietyTile("BlockA", 7, TileCollision.Impassable);
+
                 default:
                     throw new NotSupportedException(string.Format("Unsupported tile type character '{0}' at position {1}, {2}.", tileType, x, y));
             }
@@ -231,7 +236,8 @@
             }
 
             this.start = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
-            this.Player = new Player(this, start);
+            //Set player
+            //this.Player = new Player(this, start);
 
             return new Tile(null, TileCollision.Passable);
         }
