@@ -1,6 +1,627 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Backgrounds\Layer0_0.png</Source>
+      <Name>Backgrounds\Layer0_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer0_0.xnb</Output>
+      <Time>2015-12-05T15:30:50.3682093+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer0_1.png</Source>
+      <Name>Backgrounds\Layer0_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer0_1.xnb</Output>
+      <Time>2015-12-05T15:30:50.3802115+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer0_2.png</Source>
+      <Name>Backgrounds\Layer0_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer0_2.xnb</Output>
+      <Time>2015-12-05T15:30:50.3892107+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer1_0.png</Source>
+      <Name>Backgrounds\Layer1_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer1_0.xnb</Output>
+      <Time>2015-12-05T15:30:50.3962131+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer1_1.png</Source>
+      <Name>Backgrounds\Layer1_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer1_1.xnb</Output>
+      <Time>2015-12-05T15:30:50.4122168+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer1_2.png</Source>
+      <Name>Backgrounds\Layer1_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer1_2.xnb</Output>
+      <Time>2015-12-05T15:30:50.4672157+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer2_0.png</Source>
+      <Name>Backgrounds\Layer2_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer2_0.xnb</Output>
+      <Time>2015-12-05T15:30:50.4752149+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer2_1.png</Source>
+      <Name>Backgrounds\Layer2_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer2_1.xnb</Output>
+      <Time>2015-12-05T15:30:50.4852158+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer2_2.png</Source>
+      <Name>Backgrounds\Layer2_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer2_2.xnb</Output>
+      <Time>2015-12-05T15:30:50.4952179+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Die monster A.png</Source>
+      <Name>Sprites\Die monster A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Die monster A.xnb</Output>
+      <Time>2015-12-07T13:56:31.12949+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Die.png</Source>
+      <Name>Sprites\Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Die.xnb</Output>
+      <Time>2015-12-07T13:56:31.1624928+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Gem.png</Source>
+      <Name>Sprites\Gem</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Gem.xnb</Output>
+      <Time>2015-12-07T13:56:31.2404958+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Idle monster A.png</Source>
+      <Name>Sprites\Idle monster A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Idle monster A.xnb</Output>
+      <Time>2015-12-07T13:56:31.3034996+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterA\Die monster A.png</Source>
+      <Name>Sprites\MonsterA\Die monster A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Die monster A.xnb</Output>
+      <Time>2015-12-07T13:56:31.413505+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterA\Die.png</Source>
+      <Name>Sprites\MonsterA\Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Die.xnb</Output>
+      <Time>2015-12-07T13:56:31.4365118+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterA\Idle monster A.png</Source>
+      <Name>Sprites\MonsterA\Idle monster A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Idle monster A.xnb</Output>
+      <Time>2015-12-07T13:56:31.4945097+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterA\Idle.png</Source>
+      <Name>Sprites\MonsterA\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Idle.xnb</Output>
+      <Time>2015-12-07T13:56:31.5445134+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterA\Run monster A.png</Source>
+      <Name>Sprites\MonsterA\Run monster A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Run monster A.xnb</Output>
+      <Time>2015-12-07T13:56:31.6665189+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterA\Run.png</Source>
+      <Name>Sprites\MonsterA\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Run.xnb</Output>
+      <Time>2015-12-07T13:56:31.788526+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterB\Die monster A.png</Source>
+      <Name>Sprites\MonsterB\Die monster A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Die monster A.xnb</Output>
+      <Time>2015-12-07T13:56:31.8065265+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterB\Die.png</Source>
+      <Name>Sprites\MonsterB\Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Die.xnb</Output>
+      <Time>2015-12-07T13:56:31.8415282+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterB\Idle monster A.png</Source>
+      <Name>Sprites\MonsterB\Idle monster A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Idle monster A.xnb</Output>
+      <Time>2015-12-07T13:56:31.8575285+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterB\Idle.png</Source>
+      <Name>Sprites\MonsterB\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Idle.xnb</Output>
+      <Time>2015-12-07T13:56:31.8965304+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterB\Run monster A.png</Source>
+      <Name>Sprites\MonsterB\Run monster A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Run monster A.xnb</Output>
+      <Time>2015-12-07T13:56:31.9455344+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterB\Run.png</Source>
+      <Name>Sprites\MonsterB\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Run.xnb</Output>
+      <Time>2015-12-07T13:56:31.9685347+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterC\Die monster A.png</Source>
+      <Name>Sprites\MonsterC\Die monster A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Die monster A.xnb</Output>
+      <Time>2015-12-07T13:56:32.0005371+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterC\Die.png</Source>
+      <Name>Sprites\MonsterC\Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Die.xnb</Output>
+      <Time>2015-12-07T13:56:32.0265396+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterC\Idle monster A.png</Source>
+      <Name>Sprites\MonsterC\Idle monster A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Idle monster A.xnb</Output>
+      <Time>2015-12-07T13:56:32.0695404+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterC\Idle.png</Source>
+      <Name>Sprites\MonsterC\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Idle.xnb</Output>
+      <Time>2015-12-07T13:56:32.0975414+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterC\Run monster A.png</Source>
+      <Name>Sprites\MonsterC\Run monster A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Run monster A.xnb</Output>
+      <Time>2015-12-07T13:56:32.1455441+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterC\Run.png</Source>
+      <Name>Sprites\MonsterC\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Run.xnb</Output>
+      <Time>2015-12-07T13:56:32.1885462+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterD\Die monster A.png</Source>
+      <Name>Sprites\MonsterD\Die monster A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Die monster A.xnb</Output>
+      <Time>2015-12-07T13:56:32.2805515+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterD\Die.png</Source>
+      <Name>Sprites\MonsterD\Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Die.xnb</Output>
+      <Time>2015-12-07T13:56:32.3145535+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterD\Idle monster A.png</Source>
+      <Name>Sprites\MonsterD\Idle monster A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Idle monster A.xnb</Output>
+      <Time>2015-12-07T13:56:32.352555+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterD\Idle.png</Source>
+      <Name>Sprites\MonsterD\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Idle.xnb</Output>
+      <Time>2015-12-07T13:56:32.3725592+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterD\Run monster A.png</Source>
+      <Name>Sprites\MonsterD\Run monster A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Run monster A.xnb</Output>
+      <Time>2015-12-07T13:56:32.4255593+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterD\Run.png</Source>
+      <Name>Sprites\MonsterD\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Run.xnb</Output>
+      <Time>2015-12-07T13:56:32.4385604+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\mysprites\attack2.png</Source>
+      <Name>Sprites\mysprites\attack2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\attack2.xnb</Output>
+      <Time>2015-12-07T13:56:32.4595614+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\mysprites\damage.png</Source>
+      <Name>Sprites\mysprites\damage</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\damage.xnb</Output>
+      <Time>2015-12-07T13:56:32.5465652+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\mysprites\damage2.png</Source>
+      <Name>Sprites\mysprites\damage2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\damage2.xnb</Output>
+      <Time>2015-12-07T13:56:32.7465765+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\mysprites\Idle.png</Source>
+      <Name>Sprites\mysprites\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\Idle.xnb</Output>
+      <Time>2015-12-07T13:56:32.8495815+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\mysprites\Idle2.png</Source>
+      <Name>Sprites\mysprites\Idle2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\Idle2.xnb</Output>
+      <Time>2015-12-07T13:56:33.0915957+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\mysprites\jump.png</Source>
+      <Name>Sprites\mysprites\jump</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\jump.xnb</Output>
+      <Time>2015-12-07T13:56:33.1445978+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\mysprites\jump2.png</Source>
+      <Name>Sprites\mysprites\jump2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\jump2.xnb</Output>
+      <Time>2015-12-07T13:56:33.1986009+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\mysprites\walk.png</Source>
+      <Name>Sprites\mysprites\walk</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\walk.xnb</Output>
+      <Time>2015-12-07T13:56:33.287606+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\mysprites\walk2.png</Source>
+      <Name>Sprites\mysprites\walk2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\walk2.xnb</Output>
+      <Time>2015-12-07T13:56:33.3406082+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Celebrate.png</Source>
+      <Name>Sprites\Player\Celebrate</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb</Output>
+      <Time>2015-12-07T13:56:33.3796101+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Die monster A.png</Source>
+      <Name>Sprites\Player\Die monster A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Die monster A.xnb</Output>
+      <Time>2015-12-07T13:56:33.4176123+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Die.png</Source>
+      <Name>Sprites\Player\Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Die.xnb</Output>
+      <Time>2015-12-07T13:56:33.451614+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Idle.png</Source>
+      <Name>Sprites\Player\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Idle.xnb</Output>
+      <Time>2015-12-07T13:56:33.4906158+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Jump.png</Source>
+      <Name>Sprites\Player\Jump</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Jump.xnb</Output>
+      <Time>2015-12-07T13:56:33.6756269+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Run.png</Source>
+      <Name>Sprites\Player\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Run.xnb</Output>
+      <Time>2015-12-07T13:56:33.708628+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Run monster A.png</Source>
+      <Name>Sprites\Run monster A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Run monster A.xnb</Output>
+      <Time>2015-12-07T13:56:33.7406296+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\steam.png</Source>
+      <Name>Sprites\steam</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\steam.xnb</Output>
+      <Time>2015-12-07T13:56:33.7926317+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\ExitReached.wma</Source>
+      <Name>Sounds\ExitReached</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\ExitReached.xnb</Output>
+      <Extra>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\ExitReached.wma</Extra>
+      <Time>2015-12-05T15:34:49.89578+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\GemCollected.wma</Source>
+      <Name>Sounds\GemCollected</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\GemCollected.xnb</Output>
+      <Extra>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\GemCollected.wma</Extra>
+      <Time>2015-12-05T15:34:49.9297821+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\MonsterKilled.wma</Source>
+      <Name>Sounds\MonsterKilled</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\MonsterKilled.xnb</Output>
+      <Extra>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\MonsterKilled.wma</Extra>
+      <Time>2015-12-05T15:34:50.1307934+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Music.wma</Source>
+      <Name>Sounds\Music</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Music.xnb</Output>
+      <Extra>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Music.wma</Extra>
+      <Time>2015-12-05T15:34:50.3677458+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\PlayerFall.wma</Source>
+      <Name>Sounds\PlayerFall</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\PlayerFall.xnb</Output>
+      <Extra>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\PlayerFall.wma</Extra>
+      <Time>2015-12-05T15:34:50.6237578+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\PlayerJump.wma</Source>
+      <Name>Sounds\PlayerJump</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\PlayerJump.xnb</Output>
+      <Extra>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\PlayerJump.wma</Extra>
+      <Time>2015-12-05T15:34:50.7031722+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\PlayerKilled.wma</Source>
+      <Name>Sounds\PlayerKilled</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\PlayerKilled.xnb</Output>
+      <Extra>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\PlayerKilled.wma</Extra>
+      <Time>2015-12-05T15:34:50.7711582+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Powerup.wma</Source>
+      <Name>Sounds\Powerup</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Powerup.xnb</Output>
+      <Extra>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Powerup.wma</Extra>
+      <Time>2015-12-05T15:34:50.8421612+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Grunt.wav</Source>
+      <Name>Sounds\Grunt</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Grunt.xnb</Output>
+      <Time>2015-12-05T15:34:50.0007876+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Horse grunt 1.wav</Source>
+      <Name>Sounds\Horse grunt 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Horse grunt 1.xnb</Output>
+      <Time>2015-12-05T15:34:50.0547889+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Horse grunt 3.wav</Source>
+      <Name>Sounds\Horse grunt 3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Horse grunt 3.xnb</Output>
+      <Time>2015-12-05T15:34:50.0617909+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Photon shot.wav</Source>
+      <Name>Sounds\Photon shot</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Photon shot.xnb</Output>
+      <Time>2015-12-05T15:34:50.5667559+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Space laser sounds 2.wav</Source>
+      <Name>Sounds\Space laser sounds 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\Space laser sounds 2.xnb</Output>
+      <Time>2015-12-05T15:34:50.9191662+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\war plains.mp3</Source>
+      <Name>Sounds\war plains</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\war plains.xnb</Output>
+      <Extra>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\war plains.wma</Extra>
+      <Time>2015-12-05T15:34:51.1271771+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{95B37B20-2499-4CB0-ACB1-318BA026EF07}</ContentProjectGUID>
@@ -8,15 +629,39 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinjaContent\</RootDirectory>
-      <LoggerRootDirectory>E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\</LoggerRootDirectory>
-      <IntermediateDirectory>E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinjaContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-12-05T13:12:43.859335+02:00</Value>
+        <Value>2015-12-05T14:03:16.6986142+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
