@@ -13,6 +13,7 @@
     using Microsoft.Xna.Framework.Audio;
     using Microsoft.Xna.Framework.Content;
     using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
     public class Level : IDisposable
     {
@@ -181,6 +182,23 @@
             }
 
             return this.tiles[x, y].Collision;
+        }
+
+        //Updates all objects in the world, performs collision between them,
+        //and handles the time limit with scoring.
+        public void Update(
+            GameTime gameTime,
+            KeyboardState kayboardState,
+            GamePadState gamePadState,
+            DisplayOrientation orientation
+            )
+        {
+
+        }
+
+        public Rectangle GetBounds(int x, int y)
+        {
+            return new Rectangle(x * GlobalConstants.TileWidth, y * GlobalConstants.TileHeight, GlobalConstants.TileWidth, GlobalConstants.TileHeight);
         }
 
         // Unloads the level content.
@@ -376,11 +394,6 @@
         private Tile LoadTile(string name, TileCollision tileCollision)
         {
             return new Tile(this.Content.Load<Texture2D>("Tiles/" + name), tileCollision);
-        }
-
-        private Rectangle GetBounds(int x, int y)
-        {
-            return new Rectangle(x * GlobalConstants.TileWidth, y * GlobalConstants.TileHeight, GlobalConstants.TileWidth, GlobalConstants.TileHeight);
         }
     }
 }
