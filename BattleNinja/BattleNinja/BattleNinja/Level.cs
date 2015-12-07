@@ -13,8 +13,6 @@
     using Microsoft.Xna.Framework.Audio;
     using Microsoft.Xna.Framework.Content;
     using Microsoft.Xna.Framework.Graphics;
-    //using Microsoft.Xna.Framework.Input.Touch;
-    //using Microsoft.Xna.Framework.Input;
 
     public class Level
     {
@@ -208,10 +206,12 @@
             }
         }
 
-        private Tile LoadEnemyTile(int x, int y, string spariteSet)
+        private Tile LoadEnemyTile(int x, int y, string spriteSet)
         {
-            return new Tile();
-            //Vector2 position = RectangleExtensions
+            Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
+            this.enemies.Add(new Enemy(this, position, spriteSet));
+            
+            return new Tile(null, TileCollision.Passable);
         }
 
         private Tile LoadGemTile(int x, int y)
