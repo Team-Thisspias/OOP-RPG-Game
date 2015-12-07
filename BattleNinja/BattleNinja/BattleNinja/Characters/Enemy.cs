@@ -116,7 +116,7 @@
             {
                 //If we are about to run into a wall or off a cliff  start waiting.
                 if (this.Level.GetCollision(tileX + (int)this.direction, tileY - 1) == TileCollision.Impassable ||
-                    this.Level.GetCollision(tileX (int)this.direction, tileY) == TileCollision.Passable)
+                    this.Level.GetCollision(tileX + (int)this.direction, tileY) == TileCollision.Passable)
                 {
                     this.waitTime = GlobalConstants.EnemyMaxWaitTime;
                 }
@@ -143,8 +143,23 @@
         {
             //Play deatch animation if we're dead, stop running
             //When the game is paused or before turning around.
-            
-            //To Do....
+            if (this.deathTime < GlobalConstants.deathTimeMax)
+            {
+                this.sprite.PlayAnimation(this.dieAnimation);
+            }
+            else if(!this.Level.Player.IsAlive ||
+                this.Level.TimeRemaining == TimeSpan.Zero ||
+                this.waitTime > 0)
+            {
+                this.sprite.PlayAnimation(this.idleAnimation);
+            }
+            else
+            {
+                this.sprite.PlayAnimation(this.runAnimation);
+            }
+
+            SpriteEffects flip = this.direction > 0 ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
+            this.sprite.Draw(gameTime, spriteBatch, this.Position, flip);
         }
     }
 }
