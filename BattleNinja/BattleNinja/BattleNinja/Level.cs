@@ -201,11 +201,28 @@
                 // Various enemis
                 case 'A':
                     return this.LoadEnemyTile(x, y, "MonsterA");
+                case 'B':
+                    return this.LoadEnemyTile(x, y, "MonsterB");
+                case 'C':
+                    return this.LoadEnemyTile(x, y, "MonsterC");
+                case 'D':
+                    return this.LoadEnemyTile(x, y, "MonsterD");
+
+                    //Platform block
+                case '~':
+                    return this.LoadVarietyTile("BlockB", 2, TileCollision.Platform);
                 default:
                     throw new NotSupportedException(string.Format("Unsupported tile type character '{0}' at position {1}, {2}.", tileType, x, y));
             }
         }
 
+        private Tile LoadVarietyTile(string baseName, int variationCount, TileCollision tileCollision)
+        {
+            int index = random.Next(variationCount);
+            return this.LoadTile(baseName + index, tileCollision);
+        }
+
+        //Instantiates an enemy and puts him in the level.
         private Tile LoadEnemyTile(int x, int y, string spriteSet)
         {
             Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
