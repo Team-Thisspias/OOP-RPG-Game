@@ -1,6 +1,5 @@
 E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\BattleNinja.exe
 E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\BattleNinja.pdb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\BattleNinja.csprojResolveAssemblyReference.cache
 E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\BattleNinja.exe
 E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\BattleNinja.pdb
@@ -10,58 +9,14 @@ C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\D
 C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\BattleNinja.exe
 C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\obj\x86\Debug\BattleNinja.pdb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer0_0.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer0_1.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer0_2.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer1_0.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer1_1.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer1_2.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer2_0.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer2_1.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Backgrounds\Layer2_2.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Fonts\Hud.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Overlays\you_died.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Overlays\you_lose.xnb
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Overlays\you_win.xnb
 E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Die monster A.xnb
 E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Die.xnb
 E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Gem.xnb
 E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Idle monster A.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Die monster A.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Die.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Idle monster A.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Idle.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Run monster A.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterA\Run.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Die monster A.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Die.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Idle monster A.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Idle.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Run monster A.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterB\Run.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Die monster A.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Die.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Idle monster A.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Idle.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Run monster A.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterC\Run.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Die monster A.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Die.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Idle monster A.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Idle.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Run monster A.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\MonsterD\Run.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\attack2.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\damage.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\damage2.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\Idle.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\Idle2.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\jump.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\jump2.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\walk.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\mysprites\walk2.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Die monster A.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Die.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Idle.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Jump.xnb
-E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Player\Run.xnb
 E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\Run monster A.xnb
 E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sprites\steam.xnb
 E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinja\bin\x86\Debug\Content\Sounds\ExitReached.xnb

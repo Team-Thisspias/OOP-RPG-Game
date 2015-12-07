@@ -65,7 +65,7 @@
         {
             texture = Level.Content.Load<Texture2D>("Sprites/steam"); //content for the gem
             origin = new Vector2(texture.Width / 2.0f, texture.Height / 2.0f);
-            collectedSound = this.Level.Content.Load<SoundEffect>("Sounds/Photo shot"); //change of sound effects
+            collectedSound = this.Level.Content.Load<SoundEffect>("Sounds/Photon shot"); //change of sound effects
         }
 
         /// <summary>
