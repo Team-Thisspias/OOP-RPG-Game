@@ -79,18 +79,23 @@ namespace BattleNinja.Characters
             {
                 int left = (int)Math.Round(Position.X - sprite.Origin.X) + localBounds.X;
                 int top = (int)Math.Round(Position.Y - sprite.Origin.Y) + localBounds.Y;
-                if (flip == SpriteEffects.FlipHorizontally)
-                    return new Rectangle(
-                (left + localBounds.Width),
-                top,
-                localBounds.Width,
-                localBounds.Height);
                 
-                return new Rectangle(
-                    (left - localBounds.Width),
-                    top,
-                    localBounds.Width,
-                    localBounds.Height);
+                if (flip == SpriteEffects.FlipHorizontally)
+                {
+                    return new Rectangle(
+                        (left + localBounds.Width),
+                        top,
+                        localBounds.Width,
+                        localBounds.Height);
+                }
+                else
+                {
+                    return new Rectangle(
+                        (left - localBounds.Width),
+                        top,
+                        localBounds.Width,
+                        localBounds.Height);
+                }
             }
         }
 

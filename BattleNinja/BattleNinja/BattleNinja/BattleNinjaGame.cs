@@ -17,8 +17,8 @@ namespace BattleNinja
     /// </summary>
     public class BattleNinjaGame : Microsoft.Xna.Framework.Game
     {
-        GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
+        private GraphicsDeviceManager graphics;
+        private SpriteBatch spriteBatch;
 
         //Global content
         private SpriteFont hudFont;
@@ -149,7 +149,7 @@ namespace BattleNinja
 
 
             //CHECK THIS!!!
-            using (FileStream stream = File.OpenRead(@"C:/Users/Aleksandar/Desktop/Levels/"+ levelIndex +".txt"))
+            using (FileStream stream = File.OpenRead(@"../../../Levels/"+ levelIndex +".txt"))
             using (FileStream writeStream = File.OpenWrite(@"Content/Levels/" + levelIndex + ".txt"))
             {
                 BinaryReader reader = new BinaryReader(stream);

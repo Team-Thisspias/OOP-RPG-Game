@@ -209,6 +209,11 @@
                     this.OnExitReached();
                 }
             }
+
+            if (this.timeRemaining < TimeSpan.Zero)
+            {
+                timeRemaining = TimeSpan.Zero;
+            }
         }
 
         public Rectangle GetBounds(int x, int y)

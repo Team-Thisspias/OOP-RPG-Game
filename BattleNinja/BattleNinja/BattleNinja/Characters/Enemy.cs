@@ -73,7 +73,8 @@
             this.runAnimation = new Animation(this.Level.Content.Load<Texture2D>(spriteSet + "Run monster A"), 0.1f, true);
             this.idleAnimation = new Animation(this.Level.Content.Load<Texture2D>(spriteSet + "Idle monster A"), 0.15f, true);
             this.dieAnimation = new Animation(this.Level.Content.Load<Texture2D>(spriteSet + "Die monster A"), 0.07f, false);
-            
+            this.sprite.PlayAnimation(idleAnimation);
+
             //Load sounds.
             this.killedSound = this.Level.Content.Load<SoundEffect>("Sounds/Horse grunt 1");
 

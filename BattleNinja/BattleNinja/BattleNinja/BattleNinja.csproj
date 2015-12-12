@@ -97,6 +97,9 @@
     <Content Include="GameThumbnail.png">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </Content>
+    <Content Include="Levels\0.txt" />
+    <Content Include="Levels\1.txt" />
+    <Content Include="Levels\2.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BattleNinjaContent\BattleNinjaContent.contentproj">
