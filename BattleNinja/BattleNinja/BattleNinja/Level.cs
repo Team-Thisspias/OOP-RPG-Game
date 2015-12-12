@@ -159,7 +159,7 @@
             Player.Draw(gameTime, spriteBatch);
 
             foreach (Enemy enemy in enemies)
-                if (enemy.isAlive || enemy.deathTime > 0)
+                if (enemy.IsAlive || enemy.deathTime > 0)
                     enemy.Draw(gameTime, spriteBatch);
 
             spriteBatch.End();
@@ -273,12 +273,12 @@
                 //Touching an enemy instantly kills the player
                 if (enemy.BoundingRectangle.Intersects(this.Player.BoundingRectangle))
                 {
-                    if (enemy.isAlive)
+                    if (enemy.IsAlive)
                     {
                         this.OnPlayerKilled(enemy); //if the enemy is alive then he is not instantly killed
                     }
 
-                    if (enemy.isAlive && enemy.BoundingRectangle.Intersects(this.Player.MeleeRectangle))
+                    if (enemy.IsAlive && enemy.BoundingRectangle.Intersects(this.Player.MeleeRectangle))
                     {
                         if (this.Player.isAttacking)
                         {

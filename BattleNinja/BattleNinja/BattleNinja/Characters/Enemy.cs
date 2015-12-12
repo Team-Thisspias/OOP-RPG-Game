@@ -33,9 +33,9 @@
 
         public Enemy(Level level, Vector2 position, string spriteSet)
         {
-            this.Level = level;
-            this.Position = position;
-            this.isAlive = true; //he is alive 
+            this.level = level;
+            this.position = position;
+            this.IsAlive = true; //he is alive 
 
             this.LoadContent(spriteSet);
         }
@@ -44,24 +44,16 @@
         public Level Level
         {
             get { return level; }
-            set
-            {
-                this.level = value;
-            }
         }
 
         public Vector2 Position
         {
             get { return position; }
-            set
-            {
-                this.position = value;
-            }
         }
 
         public float deathTime = GlobalConstants.deathTimeMax;
 
-        public bool isAlive { get; private set; }
+        public bool IsAlive { get; private set; }
 
         public Rectangle BoundingRectangle
         {
@@ -126,7 +118,7 @@
                     Vector2 velocity = new Vector2((int)this.direction * GlobalConstants.EnemyMoveSpeed * elapsed, 0.0f);
                     this.position = this.position + velocity;
                 }
-                if (!this.isAlive)
+                if (!this.IsAlive)
                 {
                     this.deathTime -= (float)gameTime.ElapsedGameTime.TotalSeconds;
                 }
@@ -135,7 +127,7 @@
 
         public void OnKilled(Player killedBy)
         {
-            this.isAlive = false;
+            this.IsAlive = false;
             this.killedSound.Play(); // once player is dead, play the killed sound for enemy
         }
 
