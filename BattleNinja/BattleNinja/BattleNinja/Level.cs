@@ -115,7 +115,10 @@
         {
             spriteBatch.Begin();
             for (int i = 0; i <= GlobalConstants.EntityLayer; ++i)
+            {
                 layers[i].Draw(spriteBatch, cameraPosition);
+            }
+
             spriteBatch.End();
 
             ScrollCamera(spriteBatch.GraphicsDevice.Viewport);
@@ -131,14 +134,22 @@
             Player.Draw(gameTime, spriteBatch);
 
             foreach (Enemy enemy in enemies)
+            {
                 if (enemy.IsAlive || enemy.deathTime > 0)
+                {
                     enemy.Draw(gameTime, spriteBatch);
+                }
+            }
 
             spriteBatch.End();
 
             spriteBatch.Begin();
+            
             for (int i = GlobalConstants.EntityLayer + 1; i < layers.Length; ++i)
+            {
                 layers[i].Draw(spriteBatch, cameraPosition);
+            }
+            
             spriteBatch.End();
 
         }
@@ -199,7 +210,7 @@
                     this.OnPlayerKilled(null);
                 }
 
-                this.UpdateGems(gameTime);
+                this.UpdateEnemies(gameTime);
 
                 //The player has reached the exit if they are standing on the ground and
                 //his bounding rectangle contains the center of the exit tile. They can only
