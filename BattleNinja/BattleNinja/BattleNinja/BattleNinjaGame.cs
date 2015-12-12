@@ -147,8 +147,10 @@ namespace BattleNinja
             if (level != null)
                 level.Dispose();
 
-            using (FileStream stream = File.OpenRead(@"C:/Users/Aleksandar/Desktop/Levels/"+ levelIndex +".txt"))
-            using (FileStream writeStream = File.OpenWrite(@"Content/Levels/"+ levelIndex +".txt"))
+
+            //CHECK THIS!!!
+            using (FileStream stream = File.OpenRead(@"C:/Users/Aleksandar/Desktop/Levels/"+ 1 +".txt"))
+            using (FileStream writeStream = File.OpenWrite(@"Content/Levels/"+ 1 +".txt"))
             {
                 BinaryReader reader = new BinaryReader(stream);
                 BinaryWriter writer = new BinaryWriter(writeStream);
@@ -156,7 +158,7 @@ namespace BattleNinja
             }
 
             // Load the level.
-            string levelPath = string.Format("Content/Levels/{0}.txt", levelIndex);
+            string levelPath = string.Format("Content/Levels/{0}.txt", 1);
             using (Stream fileStream = TitleContainer.OpenStream(levelPath))
                 level = new Level(Services, fileStream, levelIndex);
         }

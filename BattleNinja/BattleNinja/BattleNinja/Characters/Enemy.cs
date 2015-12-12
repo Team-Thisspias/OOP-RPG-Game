@@ -83,7 +83,7 @@
             this.dieAnimation = new Animation(this.Level.Content.Load<Texture2D>(spriteSet + "Die monster A"), 0.07f, false);
             
             //Load sounds.
-            this.killedSound = this.Level.Content.Load<SoundEffect>("Sounds/Hourse frunt 1");
+            this.killedSound = this.Level.Content.Load<SoundEffect>("Sounds/Horse grunt 1");
 
             //Calculate bounds within texture size.
             int width = (int)(this.idleAnimation.FrameWidth * 0.35);

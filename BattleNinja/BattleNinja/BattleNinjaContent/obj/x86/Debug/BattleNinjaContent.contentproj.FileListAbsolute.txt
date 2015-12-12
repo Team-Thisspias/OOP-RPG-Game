@@ -1,1 +1,2 @@
 C:\Users\Ivan\Desktop\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinjaContent\obj\x86\Debug\BattleNinjaContent.contentprojResolveAssemblyReference.cache
+E:\OOP-RPG-Game\BattleNinja\BattleNinja\BattleNinjaContent\obj\x86\Debug\BattleNinjaContent.contentprojResolveAssemblyReference.cache

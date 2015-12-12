@@ -13,7 +13,7 @@
     using Microsoft.Xna.Framework.Audio;
     using Microsoft.Xna.Framework.Content;
     using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
+    using Microsoft.Xna.Framework.Input;
 
     public class Level : IDisposable
     {
@@ -26,8 +26,8 @@ using Microsoft.Xna.Framework.Input;
         //Entities in the level.
         private Player player;
 
-        private List<Gem> gems;
-        private List<Enemy> enemies;
+        private List<Gem> gems = new List<Gem>();
+        private List<Enemy> enemies = new List<Enemy>();
 
         //Key locations in the level.
         private Vector2 start;
@@ -58,9 +58,6 @@ using Microsoft.Xna.Framework.Input;
             layers[1] = new Layer(Content, "Backgrounds/Layer1", 0.5f);   // this allows me to have 3 layers of background instead of the standard 1
             layers[2] = new Layer(Content, "Backgrounds/Layer2", 0.8f);
 
-            this.Gems = new List<Gem>();
-            this.Enemies = new List<Enemy>();
-
             // Load sounds.
             exitReachedSound = Content.Load<SoundEffect>("Sounds/Space laser sounds 2");
 
@@ -88,6 +85,10 @@ using Microsoft.Xna.Framework.Input;
             get
             {
                 return this.player;
+            }
+            set
+            {
+                this.player = value;
             }
         }
 
@@ -397,7 +398,7 @@ using Microsoft.Xna.Framework.Input;
 
             //Verify that level has a beginning and an end.
             if (this.Player == null)
-            {
+            {                
                 throw new NotSupportedException("A level must have a starting point.");
             }
             if (this.exit == InvalidPosition)
@@ -462,7 +463,7 @@ using Microsoft.Xna.Framework.Input;
 
             this.start = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
             //Set player
-            //this.Player = new Player(this, start);
+            this.Player = new Player(this, start);
 
             return new Tile(null, TileCollision.Passable);
         }
@@ -486,7 +487,9 @@ using Microsoft.Xna.Framework.Input;
         private Tile LoadGemTile(int x, int y)
         {
             Point position = GetBounds(x, y).Center;
-            this.gems.Add(new Gem(this, new Vector2(position.X, position.Y)));
+            Gem gem = new Gem(this, new Vector2(position.X, position.Y));
+            
+            this.Gems.Add(gem);
 
             return new Tile(null, TileCollision.Passable);
         }
