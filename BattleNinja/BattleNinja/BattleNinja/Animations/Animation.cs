@@ -9,9 +9,9 @@ namespace BattleNinja.Animations
 
         public Animation(Texture2D texture, float frameTime, bool isLooping)
         {
-            this.Texture = texture;
-            this.FrameTime = frameTime;
-            this.IsLooping = isLooping;
+            this.texture = texture;
+            this.frameTime = frameTime;
+            this.isLooping = isLooping;
         }
 
         //All grames in the animation arranged horizontally.
@@ -20,10 +20,6 @@ namespace BattleNinja.Animations
             get
             {
                 return this.texture;
-            }
-            set
-            {
-                this.texture = value;
             }
         }
 
@@ -34,10 +30,6 @@ namespace BattleNinja.Animations
             {
                 return this.frameTime;
             }
-            set
-            {
-                this.frameTime = value;
-            }
         }
 
         //When the end of the animation i reached, should it continue playing from the beginning.
@@ -46,10 +38,6 @@ namespace BattleNinja.Animations
             get
             {
                 return this.isLooping;
-            }
-            set
-            {
-                this.isLooping = value;
             }
         }
 
@@ -68,7 +56,7 @@ namespace BattleNinja.Animations
             // Assume square frames.
             get
             {
-                return this.Texture.Width;
+                return this.Texture.Height;
             }
         }
 

@@ -140,6 +140,7 @@
                 this.sprite.PlayAnimation(this.dieAnimation);
             }
             else if(!this.Level.Player.IsAlive ||
+                this.Level.ReachedExit ||
                 this.Level.TimeRemaining == TimeSpan.Zero ||
                 this.waitTime > 0)
             {
