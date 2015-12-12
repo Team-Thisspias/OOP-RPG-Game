@@ -86,10 +86,6 @@
             {
                 return this.player;
             }
-            set
-            {
-                this.player = value;
-            }
         }
 
         public TimeSpan TimeRemaining
@@ -112,30 +108,6 @@
         public int Height
         {
             get { return tiles.GetLength(1); }
-        }
-
-        public List<Gem> Gems 
-        { 
-            get
-            {
-                return this.gems;
-            }
-            set
-            {
-                this.gems = value;
-            }
-        }
-
-        public List<Enemy> Enemies
-        {
-            get
-            {
-                return this.enemies;
-            }
-            set
-            {
-                this.enemies = value;
-            }
         }
 
         // Draw everything in the level from background to foreground.
@@ -213,7 +185,7 @@
                 int seconds = (int)Math.Round(gameTime.ElapsedGameTime.TotalSeconds * 100.0f);
                 seconds = Math.Min(seconds, (int)Math.Ceiling(this.TimeRemaining.TotalSeconds));
                 timeRemaining -= TimeSpan.FromSeconds(seconds);
-                score += seconds + GlobalConstants.LevelPointsPerSecond;
+                score += seconds * GlobalConstants.LevelPointsPerSecond;
             }
             else
             {
@@ -261,10 +233,16 @@
             {
                 Gem gem = this.gems[i];
                 gem.Update(gameTime);
+
+                if (gem.BoundingCircle.Intersects(this.Player.BoundingRectangle))
+                {
+                    this.gems.RemoveAt(i--);
+                    OnGemCollected(gem, this.Player);
+                }
             }
         }
 
-        private void updateEnemies(GameTime gameTime)
+        private void UpdateEnemies(GameTime gameTime)
         {
             foreach (Enemy enemy in this.enemies)
             {
@@ -463,7 +441,7 @@
 
             this.start = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
             //Set player
-            this.Player = new Player(this, start);
+            this.player = new Player(this, start);
 
             return new Tile(null, TileCollision.Passable);
         }
@@ -486,10 +464,8 @@
 
         private Tile LoadGemTile(int x, int y)
         {
-            Point position = GetBounds(x, y).Center;
-            Gem gem = new Gem(this, new Vector2(position.X, position.Y));
-            
-            this.Gems.Add(gem);
+            Point position = GetBounds(x, y).Center;           
+            this.gems.Add(new Gem(this, new Vector2(position.X, position.Y)));
 
             return new Tile(null, TileCollision.Passable);
         }

@@ -19,10 +19,6 @@
             {
                 return this.animation;
             }
-            set
-            {
-                this.animation = value;
-            }
         }
 
         //Gets the index of the current frame in the animation.
@@ -32,10 +28,6 @@
             {
                 return this.frameIndex;
             }
-            set
-            {
-                this.frameIndex = value;
-            }
         }
 
         //Gets a texture origin at the bottom center of each frame.
@@ -43,7 +35,7 @@
         { 
             get
             {
-                return new Vector2(this.Animation.FrameWidth / 2.0f, this.Animation.FrameWidth);
+                return new Vector2(this.Animation.FrameWidth / 2.0f, this.Animation.FrameHeight);
             }
         }
 
@@ -56,8 +48,8 @@
             }
 
             //Start the new animation.
-            this.Animation = animation;
-            this.FrameIndex = 0;
+            this.animation = animation;
+            this.frameIndex = 0;
             this.time = 0.0f;
         }
 
@@ -78,11 +70,11 @@
                 //Advanced the frame index; looping or clamping as appropiate.
                 if (this.Animation.IsLooping)
                 {
-                    this.FrameIndex = (this.FrameIndex + 1) % this.Animation.FrameCount;
+                    this.frameIndex = (this.FrameIndex + 1) % this.Animation.FrameCount;
                 }
                 else
                 {
-                    this.FrameIndex = Math.Min(this.FrameIndex + 1, this.Animation.FrameCount - 1);
+                    this.frameIndex = Math.Min(this.FrameIndex + 1, this.Animation.FrameCount - 1);
                 }
             }
 
